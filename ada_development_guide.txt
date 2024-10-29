@@ -1,0 +1,114 @@
+ADA AI ASSISTANT - SOFTWARE DEVELOPMENT GUIDE
+===========================================
+
+1. PROJECT INITIALIZATION
+------------------------
+# Start by planning the architecture
+uv run main --prompts "Hey Ada, generate a diagram outlining the architecture for our new project"
+
+# Save project requirements to memory
+uv run main --prompts "add to memory the key 'project_requirements' with the value 'Building a web application with user authentication, database storage, and API endpoints'"
+
+# Create project documentation structure
+uv run main --prompts "Create a markdown file called PROJECT_STRUCTURE.md outlining our folder organization"
+
+2. DATABASE DESIGN
+-----------------
+# Design database schema
+uv run main --prompts "Hey Ada, generate a diagram showing our database schema with users, posts, and comments tables"
+
+# Initialize mock database
+uv run main --prompts "Create a new CSV file called mock_users with 10 mock rows for testing"
+
+# Test database queries
+uv run main --prompts "Hey Ada, load the tables into memory|Ada execute sql SELECT * FROM Users LIMIT 5"
+
+3. CODE DEVELOPMENT
+------------------
+# Generate boilerplate code
+uv run main --prompts "Hey Ada, create a basic user authentication module in Python"
+
+# Code review and improvements
+uv run main --prompts "Hey Ada, check if auth.py is runnable"
+uv run main --prompts "Hey Ada, analyze auth.py and suggest improvements"
+
+# Save code decisions to memory
+uv run main --prompts "add to memory the key 'auth_implementation' with the value 'Using JWT tokens with Redis blacklist'"
+
+4. API DEVELOPMENT
+-----------------
+# Design API endpoints
+uv run main --prompts "Generate a markdown file documenting our REST API endpoints"
+
+# Test API structure
+uv run main --prompts "Create a Postman collection JSON file for our API endpoints"
+
+5. DOCUMENTATION
+---------------
+# Generate technical documentation
+uv run main --prompts "Create a markdown file explaining our authentication flow"
+
+# Save implementation notes
+uv run main --prompts "copy my current clipboard to memory with the key 'implementation_notes'"
+
+6. TESTING
+----------
+# Generate test data
+uv run main --prompts "Create a new CSV file called test_scenarios with 20 mock test cases"
+
+# Review test coverage
+uv run main --prompts "Hey Ada, analyze tests/test_auth.py and suggest additional test cases"
+
+7. DEPLOYMENT
+------------
+# Generate deployment diagrams
+uv run main --prompts "Generate a diagram showing our deployment architecture"
+
+# Create deployment docs
+uv run main --prompts "Create a markdown file called DEPLOYMENT.md with setup instructions"
+
+BEST PRACTICES
+-------------
+1. Chain related commands using the | operator:
+   uv run main --prompts "Generate API documentation|save to memory with key 'api_docs'|create markdown file from memory"
+
+2. Keep track of decisions in memory:
+   uv run main --prompts "add to memory the key 'tech_stack' with the value 'Python/FastAPI/PostgreSQL'"
+
+3. Use diagrams for complex features:
+   uv run main --prompts "Hey Ada, generate a diagram showing the user authentication flow"
+
+4. Save research and references:
+   uv run main --prompts "scrape the URL from my clipboard and save it to a file"
+
+5. Regular documentation updates:
+   uv run main --prompts "Update PROJECT_STRUCTURE.md with new microservices architecture"
+
+USEFUL COMMANDS
+--------------
+- Generate diagrams:
+  uv run main --prompts "Hey Ada, generate a diagram for [feature]"
+
+- Code analysis:
+  uv run main --prompts "Hey Ada, analyze [file.py] and suggest improvements"
+
+- Database operations:
+  uv run main --prompts "Hey Ada, load the tables into memory|Ada [sql query]"
+
+- Memory management:
+  uv run main --prompts "add to memory the key '[key]' with the value '[value]'"
+
+- Documentation:
+  uv run main --prompts "Create a markdown file documenting [topic]"
+
+TIPS
+----
+1. Break down large features into smaller tasks
+2. Regularly commit changes to version control
+3. Keep documentation updated as you develop
+4. Use Ada's memory feature to track important decisions
+5. Generate diagrams for complex workflows
+6. Save research findings and references in memory
+7. Use mock data for testing early in development
+
+Remember: Ada can help with architecture, code review, documentation, and testing, but you should always review and validate its output before using in production.
